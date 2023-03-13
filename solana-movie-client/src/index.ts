@@ -91,7 +91,7 @@ async function main() {
     const connection = new web3.Connection(web3.clusterApiUrl('devnet'))
     await airdropSolIfNeeded(signer, connection)
     
-    const movieProgramId = new web3.PublicKey('9DvnRAmNVDvdyjZDZGEuTLGZGmi2QswLgh8mQE12nDuW')
+    const movieProgramId = new web3.PublicKey('4rTrimknVtoMynZZUFwbF8CgfVfVPJRSZUqJdae52bbp')
     // https://explorer.solana.com/tx/55qNcKfEgYV7CT1MXqtozFRgFRaZSnc6JvceH58iNk5Z2z9e13huXv6FzCDWKrgZUZBJMxJ7mU4gpWLk2b2oAdTi?cluster=devnet
     await sendTestMovieReview(signer, movieProgramId, connection)
 }
